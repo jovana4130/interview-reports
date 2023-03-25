@@ -1,0 +1,17 @@
+.card {
+  
+  border: 2px solid rgb(93, 85, 85) ;
+  padding: 20px;
+  width: 350px;
+  height: 450px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  box-shadow: var(--outer-shadow);
+
+}
+
+.card .card--placeholder {
+
+ opacity: 0.5;
+}
