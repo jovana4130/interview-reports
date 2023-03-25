@@ -1,12 +1,12 @@
 import "./CandidateCard.css";
 
-function CandidateCard () {
+function CandidateCard ({ candidateCard }) {
 
   return (
 
     <div className="card">
-      
-      <img src="" alt="A Marvel Hero" />
+      <div className="avatar">{candidateCard.avatar}</div>
+      <img src="" alt="Candidate Name" />
       <h3>Candidate Name</h3>
       <p>Email</p>
     </div>
