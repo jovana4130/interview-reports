@@ -1,26 +1,17 @@
 import CandidatesPlaceholderCard from "../CandidatesPlaceholderCard/CandidatesPlaceholderCard";
 import CandidateCard from "../CandidateCard/CandidateCard";
-import { useState, useEffect } from 'react';
+
 import "./MainContent.css"
 
-function MainContent ({ children }) {
+function MainContent (props) {
+
+  const candidates = props.candidates;
 
   
   let candidatesPlaceholderCard = [];
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 7; i++) {
     candidatesPlaceholderCard.push(null);
   }
-
-  const [candidateCard, setCandidateCard] = useState ([]);
-  useEffect(() => {
-      fetch( `http://localhost:3333/api/candidates`)
-      .then(data => data.json())
-      .then(res => {
-      setCandidateCard(res);
-      }
-    )
-  }, [])
-
 
   return (
 
@@ -33,20 +24,20 @@ function MainContent ({ children }) {
       <div className="candidates">
       
       {
-          
+        candidates.length === 0 && 
           candidatesPlaceholderCard.map((item, index) => {
             return (
-              <CandidatesPlaceholderCard /> 
+              <CandidatesPlaceholderCard key={index}/> 
             )
           })
       }
 
       {
           
-            
-              candidateCard.map((item) => {
+            candidates.length > 0 &&
+              candidates.map((item) => {
                 return (
-                  <CandidateCard candidateCard={candidateCard}/>
+                  <CandidateCard key={item.id} item={item}/>
 
                 )
               })
