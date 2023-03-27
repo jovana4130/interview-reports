@@ -29,12 +29,7 @@ function MainContent () {
         }
 
         {
-
-          candidates.map((item) => {
-            return (
-              <CandidateCard />
-            )
-          })
+          <CandidateCard />
         }
 
       </div>
