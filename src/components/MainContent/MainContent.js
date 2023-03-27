@@ -7,7 +7,7 @@ function MainContent (props) {
 
   const candidates = props.candidates;
 
-  
+
   let candidatesPlaceholderCard = [];
   for (let i = 0; i < 7; i++) {
     candidatesPlaceholderCard.push(null);
@@ -15,14 +15,14 @@ function MainContent (props) {
 
   return (
 
-    
+
     <div className="main-content">
       <h1>Candidates</h1>
       <input type="text" placeholder="Search..." />
       <hr></hr>
-      
+
       <div className="candidates">
-      
+
       {
         candidates.length === 0 && 
           candidatesPlaceholderCard.map((item, index) => {
@@ -42,7 +42,6 @@ function MainContent (props) {
                 )
               })
           }
-      
       </div>
     </div>
   )

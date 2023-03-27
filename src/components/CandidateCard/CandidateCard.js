@@ -14,6 +14,7 @@ function CandidateCard (props) {
       <img src={imgSrc} alt="A Candidate" />
       <h3>{item.name}</h3>
       <p>{item.email}</p>
+    
     </div>
   )
 

@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
 import { useState, useEffect } from 'react';
 
-function App () {
+function App() {
 
   const [candidates, setCandidates] = useState ([]);
   
@@ -17,7 +17,9 @@ function App () {
   }, [])
 
   return (
-    <div>
+    
+    <div className="App">
+
       <Header />
       <MainContent candidates={candidates}/>
       <Footer />
