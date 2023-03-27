@@ -4,7 +4,7 @@ import "./MainContent.css"
 
 function MainContent () {
 
-  
+
   let candidatesPlaceholderCard = [];
   for (let i = 0; i < 8; i++) {
     candidatesPlaceholderCard.push(null);
@@ -12,33 +12,31 @@ function MainContent () {
 
   return (
 
-    
+
     <div className="main-content">
       <h1>Candidates</h1>
       <input type="text" placeholder="Search..." />
       <hr></hr>
-      
+
       <div className="candidates">
-      
-      {
-          
+
+        {
           candidatesPlaceholderCard.map((item, index) => {
             return (
-              <CandidatesPlaceholderCard /> 
+              <CandidatesPlaceholderCard />
             )
           })
-      }
+        }
 
-      {
-          
-            
-              candidates.map((item) => {
-                return (
-                  <CandidateCard />
-                )
-              })
-          }
-      
+        {
+
+          candidates.map((item) => {
+            return (
+              <CandidateCard />
+            )
+          })
+        }
+
       </div>
     </div>
   )

@@ -1,10 +1,23 @@
 
-.candidates {
+.candidates-list {
   
+  width: 90%;
+  border: 3px solid black;
   margin: 50px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+
+.card {
+   width: 400px;
+   height: 500px;
+}
+
+.card img {
+
+  max-width: 250px;
+  height: auto;
 }
