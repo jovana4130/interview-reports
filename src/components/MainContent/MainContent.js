@@ -1,12 +1,15 @@
 import CandidatesPlaceholderCard from "../CandidatesPlaceholderCard/CandidatesPlaceholderCard";
 import CandidateCard from "../CandidateCard/CandidateCard";
+
 import "./MainContent.css"
 
-function MainContent () {
+function MainContent (props) {
+
+  const candidates = props.candidates;
 
 
   let candidatesPlaceholderCard = [];
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 7; i++) {
     candidatesPlaceholderCard.push(null);
   }
 
@@ -20,18 +23,25 @@ function MainContent () {
 
       <div className="candidates">
 
-        {
+      {
+        candidates.length === 0 && 
           candidatesPlaceholderCard.map((item, index) => {
             return (
-              <CandidatesPlaceholderCard />
+              <CandidatesPlaceholderCard key={index}/> 
             )
           })
-        }
+      }
 
-        {
-          <CandidateCard />
-        }
+      {
+          
+            candidates.length > 0 &&
+              candidates.map((item) => {
+                return (
+                  <CandidateCard key={item.id} item={item}/>
 
+                )
+              })
+          }
       </div>
     </div>
   )

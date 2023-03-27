@@ -1,5 +1,5 @@
 //import React from 'react';
-import  './CandidatesPlaceholderCard.css';
+import  './CandidatesPlaceholderCard';
 
 const CandidatesPlaceholderCard = () => {
 
