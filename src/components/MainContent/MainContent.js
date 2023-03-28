@@ -3,9 +3,10 @@ import CandidateCard from "../CandidateCard/CandidateCard";
 
 import "./MainContent.css"
 
-function MainContent (props) {
+function MainContent(props) {
 
   const candidates = props.candidates;
+  //const users = props.users;
 
 
   let candidatesPlaceholderCard = [];
@@ -17,32 +18,36 @@ function MainContent (props) {
 
 
     <div className="main-content">
-      <h1>Candidates</h1>
-      <input type="text" placeholder="Search..." />
-      <hr></hr>
 
       <div className="candidates">
+        <h1>Candidates</h1>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <hr></hr>
 
-      {
-        candidates.length === 0 && 
+      <div className="candidates-list">
+
+        {
+          candidates.length === 0 &&
           candidatesPlaceholderCard.map((item, index) => {
             return (
-              <CandidatesPlaceholderCard key={index}/> 
+              <CandidatesPlaceholderCard key={index} />
             )
           })
-      }
+        }
 
-      {
-          
-            candidates.length > 0 &&
-              candidates.map((item) => {
-                return (
-                  <CandidateCard key={item.id} item={item}/>
+        {
 
-                )
-              })
-          }
+          candidates.length > 0 &&
+          candidates.map((item) => {
+            return (
+              <CandidateCard key={item.id} item={item} />
+
+            )
+          })
+        }
       </div>
+      
     </div>
   )
 }
