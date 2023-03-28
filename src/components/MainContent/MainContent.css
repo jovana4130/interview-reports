@@ -1,18 +1,51 @@
+.App .main-content {
 
-.candidates-list {
+  width: 95%;
+  margin: 20px auto;
+  padding-bottom: 50px;
+  flex: 1;
+}
+
+.candidates {
   
-  width: 90%;
-  border: 3px solid black;
-  margin: 50px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
+
 }
 
-.card {
-   width: 400px;
-   height: 500px;
+.candidates input {
+
+  background-color: #b9c7da;
+  max-width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  outline: none;
+  font-size: 1.1em;
+  color:#555;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+  15px 15px 15px rgba(0, 0, 0, 0.1),
+  20px 20px 15px rgba(0, 0, 0, 0.1),
+  30px 30px 15px rgba(0, 0, 0, 0.1),
+  inset 1px 1px 2px #fff;
+
 }
+
+.candidates-list {
+  
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
+ 
+}
+
 

@@ -1,20 +1,25 @@
 import "./CandidateCard.css";
 
-function CandidateCard (props) {
+function CandidateCard(props) {
 
   const item = props.item;
   console.log(item);
-  const imgSrc =item.avatar;
+  const imgSrc = item.avatar;
 
 
   return (
 
     <div className="card">
-      
-      <img src={imgSrc} alt="A Candidate" />
-      <h3>{item.name}</h3>
-      <p>{item.email}</p>
-    
+
+      <div className="candidate-image">
+        <img src={imgSrc} alt="A Candidate" />
+      </div>
+
+      <div className="candidate-info">
+        <h3>{item.name}</h3>
+        <p>{item.email}</p>
+      </div>
+
     </div>
   )
 
