@@ -1,32 +1,25 @@
-import "./App.css"
+import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router";
 import CandidateReports from "./components/CandidateReports/CandidateReports";
 
 
 function App() {
-
   const [candidates, setCandidates] = useState([]);
   //const [users, setUsers] = useState([]);
 
-
-
   const fetchCandidates = () => {
-
     const url = "http://localhost:3333/api/candidates";
 
     fetch(url)
-      .then(data => data.json())
-      .then(res => {
+      .then((data) => data.json())
+      .then((res) => {
         setCandidates(res);
-      }
-      )
-  }
-
-
+      });
+  };
 
   /* const fetchUsers = () => {
      const url = "http://localhost:3333/api/users";
@@ -39,31 +32,30 @@ function App() {
    }*/
 
   useEffect(() => {
-
     fetchCandidates();
     //fetchUsers();
-
-  }, [])
-
-
+  }, []);
 
   return (
-
     <div className="App">
-
       <Header />
 
       <Routes>
+
+        <Route
+          path="/"
+          element={<MainContent candidates={candidates} />}
+        />
+
         <Route path="/" element={<MainContent candidates={candidates} />} />
         <Route path='/candidate/:id' element={<CandidateReports/>} />
          
+ 
       </Routes>
 
-
-        
       <Footer />
     </div>
-  )
+  );
 }
 
 export default App;
