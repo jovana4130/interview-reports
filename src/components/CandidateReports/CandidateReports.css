@@ -1,5 +1,64 @@
-table{
+table {
     border:1px solid black;
     width: 80%;
     height: 300px;
+}
+
+.candidate-reports {
+    width: 95%;
+    margin: 50px auto;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.avatar,
+.name-email,
+.birthday-education {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+}
+
+table {
+    width: 90%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 50px auto;
+    height: 200px;
+    box-shadow:7px 7px 7px #8F98B3,
+    -5px -5px 8px #EAE6E6 ;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    font-size: 1.5em;
+    color: #7774E4
+}
+
+td {
+    font-size: 1.2em;
+}
+
+thead, tr, th, td {
+    height: 50px;
+    box-shadow: inset 4px 4px 7px #8F98B3,
+    inset -3px -3px 6px #EAE6E6;
 }
