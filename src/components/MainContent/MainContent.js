@@ -43,8 +43,18 @@ function MainContent(props) {
       <div className="candidates-list">
         {candidates.length === 0 &&
           candidatesPlaceholderCard.map((item, index) => {
+
             return <CandidatesPlaceholderCard key={index} />;
           })}
+        
+
+        {
+
+          candidates.length > 0 &&
+          candidates.map((item) => {
+            return (
+              <CandidateCard key={item.id} candidate={item} />
+
 
         {candidates.length > 0 &&
           filteringCandidates.map((item) => {

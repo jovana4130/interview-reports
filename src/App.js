@@ -4,7 +4,8 @@ import Header from "./components/Header/Header";
 import MainContent from "./components/MainContent/MainContent";
 import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router";
-//import CandidateReports from "./components/CandidateReports/CandidateReports";
+import CandidateReports from "./components/CandidateReports/CandidateReports";
+
 
 function App() {
   const [candidates, setCandidates] = useState([]);
@@ -40,10 +41,16 @@ function App() {
       <Header />
 
       <Routes>
+
         <Route
-          path="/candidates"
+          path="/"
           element={<MainContent candidates={candidates} />}
         />
+
+        <Route path="/" element={<MainContent candidates={candidates} />} />
+        <Route path='/candidate/:id' element={<CandidateReports/>} />
+         
+ 
       </Routes>
 
       <Footer />
