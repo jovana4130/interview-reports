@@ -7,7 +7,6 @@ function CandidateCard(props) {
   const imgSrc = item.avatar;
 
   return (
-    //()=> navigate('/candidates/'+`${id}`)
     <div>
       <div className="card" onClick={() => navigate("/candidate/" + item.id)}>
         <div className="candidate-image">
@@ -19,7 +18,6 @@ function CandidateCard(props) {
           <p>{item.email}</p>
         </div>
       </div>
-      {/*<Outlet/>*/}
     </div>
   );
 }
