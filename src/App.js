@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router";
 import CandidateReports from "./components/CandidateReports/CandidateReports";
 
-
 function App() {
   const [candidates, setCandidates] = useState([]);
   //const [users, setUsers] = useState([]);
@@ -41,16 +40,8 @@ function App() {
       <Header />
 
       <Routes>
-
-        <Route
-          path="/"
-          element={<MainContent candidates={candidates} />}
-        />
-
         <Route path="/" element={<MainContent candidates={candidates} />} />
-        <Route path='/candidate/:id' element={<CandidateReports/>} />
-         
- 
+        <Route path="/candidate/:id" element={<CandidateReports />} />
       </Routes>
 
       <Footer />
