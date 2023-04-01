@@ -41,7 +41,7 @@ function MainContent(props) {
           candidates.length > 0 &&
           candidates.map((item) => {
             return (
-              <CandidateCard key={item.id} item={item} />
+              <CandidateCard key={item.id} candidate={item} />
 
             )
           })
