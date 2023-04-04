@@ -1,5 +1,101 @@
-table{
-    border:1px solid black;
-    width: 80%;
-    height: 300px;
+.candidate-reports {
+    width: 95%;
+    /* margin: 50px auto; */
+    /* height: 100%; */
+    margin: 0;
+}
+
+.id-container {
+    display: flex;
+    width: 90%;
+    /* height: auto; */
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5%;
+    border-radius: 5px;
+    margin: 70px auto;
+    border: 2px solid royalblue;  /* do not panic its just for styling */
+}
+
+.avatar {
+    filter: drop-shadow(2px 4px 8px #494846); 
+    /* border-radius: 50%; */
+    padding: 10px;
+    opacity: 30%;
+    border: 2px solid royalblue;
+    flex: 1; /* svi elementi da budu iste velicine, flex 2 bice duplo veci*/
+}
+
+.avatar>img {
+    width: 250px;
+    height: auto;
+}
+
+.name-email {
+    border: 2px solid royalblue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.name-email p:nth-child(even), .birth-education p:nth-child(even) {
+    font-size: 30px;
+}
+
+.birth-education{
+    border: 2px solid royalblue;
+    flex: 1;
+}
+
+.avatar, .name, .birthday, .email, .education {
+    font-size: 20px;
+    color: rgb(102, 100, 100);
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center; */
+    flex: 1;
+}
+
+h3 {
+    width: 90%;
+    margin: 5px auto;
+}
+
+table {
+    width: 90%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 20px auto;
+    height: 200px;
+    box-shadow:7px 7px 7px #8F98B3,
+    -5px -5px 8px #EAE6E6 ;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    font-size: 1.5em;
+    color: #7774E4
+}
+
+td {
+    font-size: 1.2em;
+}
+
+thead, tr, th, td {
+    height: 50px;
+    box-shadow: inset 4px 4px 7px #8F98B3,
+    inset -3px -3px 6px #EAE6E6;
+}
+
+span {
+    cursor: pointer;
 }

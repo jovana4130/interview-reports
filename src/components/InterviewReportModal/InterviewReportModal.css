@@ -19,9 +19,11 @@
 .modal-overlay .modal {
     background-color: #b9c1da;
     max-width: 1200px;
-    max-height: 80vh;
+    height: 30%;
     overflow-y: auto;
-    
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 1, 1);
 }
   
 .modal-overlay .close-button {
@@ -37,5 +39,15 @@
     font-weight: 600;
     cursor: pointer;
     text-align: center;
-  
+    margin-top: 20px;
+}
+
+.modal-overlay {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.6px);
+    -webkit-backdrop-filter: blur(15.6px);
+    border: 1px solid rgba(255, 255, 255, 0.01); 
 }

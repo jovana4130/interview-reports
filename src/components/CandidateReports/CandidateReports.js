@@ -53,17 +53,27 @@ function CandidateReports() {
   console.log(candidate);
   return (
     <div className="candidate-reports">
-      <div onClick={CandidateReports}></div>
-      <p>Name:</p>
-      <p>{candidate.name}</p>
-      <p>Date of birth:</p>
-      <p>{candidate.birthday}</p>
-      <p>Email:</p>  
-      <p>{candidate.email}</p>
-      <p>Education:</p>
-      <p>{candidate.education}</p>
-  
-      <p>Reports</p>
+        {/* <div onClick={CandidateReports}></div> */}
+        <div className="id-container">
+          <div className="avatar">
+            <img src={candidate.avatar} alt='candidate'/>
+          </div>
+          <div className="name-email">
+            <p className="name">Name:</p>
+            <p>{candidate.name}</p>
+            <p className="email">Email:</p>  
+            <p>{candidate.email}</p>
+          </div>
+          <div className="birth-education">
+            <p className="birthday">Date of birth:</p>
+            <p>{candidate.birthday}</p>
+            <p className="education">Education:</p>
+            <p>{candidate.education}</p>
+          </div>
+        </div>
+      
+
+      <h3>Reports</h3>
       <table>
         <thead>
           <tr>
