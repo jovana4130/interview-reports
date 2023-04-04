@@ -1,27 +1,25 @@
 .App .main-content {
 
   width: 95%;
-  margin: 20px auto;
+  margin: 20px auto; 
   padding-bottom: 50px;
   flex: 1;
 }
 
 .candidates {
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-
+  margin: 0 20px ;
 }
 
 .candidates input {
-
-  background-color: #b9c7da;
+  /* background-color: #b9c7da; */
+  background-color: white;
   max-width: 250px;
-  height: 30px;
+  height: 15px;
   border: none;
   border-radius: 30px;
   padding: 10px 25px;
@@ -45,7 +43,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 50px;
- 
+
 }
 
 

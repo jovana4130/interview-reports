@@ -2,7 +2,7 @@
 
   min-height: 80px;
   padding: 0 50px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 
   display: flex;
   flex-direction: row;
@@ -18,18 +18,74 @@
 
 }
 
-.header a {
+ /* .header a { 
 
   text-decoration: none;
   color: rgb(71, 76, 82);
 
+} */
+
+.header  {
+  text-decoration: none;
+  color: rgb(30, 31, 31);
 }
 
+.main-title button {
+ border: none;
+ background-color: inherit;
+ cursor: pointer;
+ 
+}
 
-
-.header h3 {
+/*.header h3 {
 
   margin: 15px;
   border: 2px solid gray; 
   padding: 7px 15px;
+  border-radius: 5px;
+}*/
+
+.candidates-button {
+  width: 150px;
+  /* border: 1px solid rgb(229, 226, 226);  */
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: 2px 2px 2px #b3f5ff; 
+  transform-style: preserve-3d;
+  background-color: #fffffe;
 }
+
+.candidates-button button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.candidates-button:hover {
+  /* transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%); */
+  color: #b3f5ff;
+}
+
+/* .candidates-button:after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background:  #b3f5ff; 
+  border-radius: 5px;
+  content: 'See the list';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}  */
+.candidates-button:active {
+  background-color: #b3f5ff; 
+  box-shadow: 2px 2px 2px rgb(251, 251, 251);
+  transform: translateY(4px);
+}
+
+/*color: #ff7a59;
+padding: 10px 40px;  
+overflow:hidden;
+transition: .1s linear;
+transition-delay: .6s;*/

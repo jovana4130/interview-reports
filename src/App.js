@@ -8,7 +8,6 @@ import CandidateReports from "./components/CandidateReports/CandidateReports";
 
 function App() {
   const [candidates, setCandidates] = useState([]);
-  //const [users, setUsers] = useState([]);
 
   const fetchCandidates = () => {
     const url = "http://localhost:3333/api/candidates";
@@ -20,19 +19,8 @@ function App() {
       });
   };
 
-  /* const fetchUsers = () => {
-     const url = "http://localhost:3333/api/users";
-     fetch(url)
-     .then(data => data.json())
-     .then(res => {
-     setUsers(res);
-     }
-   )
-   }*/
-
   useEffect(() => {
     fetchCandidates();
-    //fetchUsers();
   }, []);
 
   return (
