@@ -16,7 +16,7 @@
     gap: 5%;
     border-radius: 5px;
     margin: 70px auto;
-    border: 2px solid royalblue;  /* do not panic its just for styling */
+    border: 2px solid royalblue;  /* do not panic its just for styling. */
 }
 
 .avatar {
