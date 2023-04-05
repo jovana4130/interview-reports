@@ -51,6 +51,11 @@ function CandidateReports() {
   }
 
   console.log(candidate);
+
+  const dateOfBirth = candidate.birthday;
+  const birthday = new Date(dateOfBirth)
+  const birthdayToString = birthday.toLocaleString();
+
   return (
     <div className="candidate-reports">
         {/* <div onClick={CandidateReports}></div> */}
@@ -66,7 +71,7 @@ function CandidateReports() {
           </div>
           <div className="birth-education">
             <p className="birthday">Date of birth:</p>
-            <p>{candidate.birthday}</p>
+            <p>{birthdayToString}</p>
             <p className="education">Education:</p>
             <p>{candidate.education}</p>
           </div>
