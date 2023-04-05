@@ -13,6 +13,10 @@ function InterviewReportModal(props) {
       document.body.classList.remove("modal-opened");
     }
   }, [])
+
+  const date = selectedReport.interviewDate;
+  const interviewDate = new Date (date);
+  const interviewDateString  = interviewDate.toLocaleString();
   
   return (
 
@@ -21,11 +25,12 @@ function InterviewReportModal(props) {
         <h1>Modal</h1>
         <div>
           {
+        
             selectedReport && (
               <div>
                 <div>{selectedReport.candidateName}</div>
                 <div>{selectedReport.companyName}</div>
-                <div>{selectedReport.interviewDate}</div>
+                <div>{interviewDateString}</div>
                 <div>{selectedReport.phase}</div>
                 <div>{selectedReport.status}</div>
                 <div>{selectedReport.note}</div>
