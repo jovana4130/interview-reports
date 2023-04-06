@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .modal-overlay {
   
     position: fixed;
@@ -64,9 +71,16 @@
     
 }
 
+.company-report {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .interviewee {
-    border: 2px solid royalblue;
-    /* flex: 1; */
+    /* border: 2px solid royalblue; */
+    flex: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -77,25 +91,29 @@
 }
 
 .report-info {
-    border: 2px solid royalblue;
-    /* flex: 1; */
+    /* border: 2px solid royalblue; */
+    flex: 1;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     height: fit-content;
     margin-bottom: 5px;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .note {
-    border: 2px solid royalblue;
-    /* flex: 1; */
+    /* border: 2px solid royalblue; */
+    flex: 1;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    width: 50%;
+    /* width: 50%; */
+}
+
+.notes {
+
 }
 
 .report-info p:nth-child(even), .company-name p:nth-child(even), .interview-date p:nth-child(even), .phase p:nth-child(even), .status p:nth-child(even), .note p:nth-child(even) {
@@ -103,7 +121,7 @@
     color: black;
 }
 
-.report-info, .company-name, .interview-date, .phase, .status, .notes {
+.report-info, .company-name, .interview-date, .phase, .status {
     font-size: 15px;
     color: rgb(102, 100, 100);
     flex: 1;

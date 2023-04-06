@@ -30,19 +30,21 @@ function InterviewReportModal(props) {
                   </div>
                 </div>
                 <hr></hr>
-                <div className="report-info">
-                  <p className="company-name">Company</p>
-                  <p>{selectedReport.companyName}</p>
-                  <p className="interview-date">Interview Date</p>
-                  <p>{selectedReport.interviewDate}</p>
-                  <p className="phase">Phase</p>
-                  <p>{selectedReport.phase}</p>
-                  <p className="status">Status</p>
-                  <p>{selectedReport.status}</p>
-                </div>
-                <div className="note">
-                  <p className="notes">Notes</p>
-                  <p>{selectedReport.note}</p>
+                <div className="company-report">
+                  <div className="report-info">
+                    <p className="company-name">Company</p>
+                    <p>{selectedReport.companyName}</p>
+                    <p className="interview-date">Interview Date</p>
+                    <p>{selectedReport.interviewDate}</p>
+                    <p className="phase">Phase</p>
+                    <p>{selectedReport.phase}</p>
+                    <p className="status">Status</p>
+                    <p>{selectedReport.status}</p>
+                  </div>
+                  <div className="note">
+                    <p className="notes">Notes</p>
+                    <p>{selectedReport.note}</p>
+                  </div>
                 </div>
               </div>
             )
