@@ -30,16 +30,6 @@
   box-shadow: 0 4px 30px rgba(0, 0, 1, 1);
 }
 
-.modal-overlay .modal {
-  background-color: #b9c1da;
-  max-width: 1200px;
-  height: 30%;
-  overflow-y: auto;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 1, 1);
-}
-
 .modal-overlay .close-button {
   top: 20px;
   right: 20px;
@@ -47,14 +37,14 @@
   height: 40px;
   line-height: 38px;
   border-radius: 100%;
-  background-color: #7774e4;
+  background-color: rgba(50,51,119);
   color: white;
   font-size: 38px;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 100px;
+  /* margin-top: 20px;
+  margin-bottom: 100px; */
 }
 
 .modal-overlay {
@@ -76,7 +66,7 @@
   align-items: center;
   gap: 5%;
   border-radius: 5px;
-  /* margin: 70px auto; */
+  margin: 70px auto;
 }
 
 .company-report {
@@ -148,24 +138,24 @@ p {
 
 @media all and (max-width: 1300px) {
   .modal-overlay .close-button {
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
   }
 }
 
 @media all and (max-width: 920px) {
   .modal-overlay .close-button {
-    margin-bottom: 400px;
+    /* margin-bottom: 400px; */
   }
 }
 
 @media all and (max-width: 700px) {
   .modal-overlay .close-button {
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
   }
 }
 @media all and (max-width: 400px) {
   .modal-overlay .close-button {
-    margin-bottom: 550px;
+    /* margin-bottom: 550px; */
     top: 20px;
     right: 20px;
     width: 40px;

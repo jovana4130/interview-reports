@@ -16,7 +16,11 @@ function InterviewReportModal(props) {
 
   const date = selectedReport.interviewDate;
   const interviewDate = new Date (date);
-  const interviewDateString  = interviewDate.toLocaleString();
+  const interviewDateString  = interviewDate.toLocaleString("SR", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
   
   return (
 
@@ -40,7 +44,7 @@ function InterviewReportModal(props) {
                     <p className="company-name">Company</p>
                     <p>{selectedReport.companyName}</p>
                     <p className="interview-date">Interview Date</p>
-                    <p>{selectedReport.interviewDate}</p>
+                    <p>{interviewDateString}</p>
                     <p className="phase">Phase</p>
                     <p>{selectedReport.phase}</p>
                     <p className="status">Status</p>
