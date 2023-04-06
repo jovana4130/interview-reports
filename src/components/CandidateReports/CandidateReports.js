@@ -80,6 +80,7 @@ function CandidateReports() {
             <th>Company</th>
             <th>Interview Date</th>
             <th>Status</th>
+            <th>👁️</th>
           </tr>
         </thead>
         <tbody>

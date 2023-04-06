@@ -31,6 +31,9 @@
 .avatar>img {
     width: 250px;
     height: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(50,51,119);
+    background-color: white;
 }
 
 .name-email {
@@ -54,6 +57,7 @@
 .avatar, .name, .birthday, .email, .education {
     font-size: 20px;
     color: rgb(102, 100, 100);
+    font-weight: lighter;
     /* display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -72,9 +76,12 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     margin: 20px auto;
+    margin-bottom: 2%;
     height: 200px;
     box-shadow:7px 7px 7px #8F98B3,
     -5px -5px 8px #EAE6E6 ;
+    background-color: rgb(255, 255, 255);
+    /* opacity: 70%; */
 }
 
 th, td {
@@ -82,8 +89,8 @@ th, td {
 }
 
 th {
-    font-size: 1.5em;
-    color: #7774E4
+    font-size: 1.3em;
+    color: rgb(50,51,119);
 }
 
 td {

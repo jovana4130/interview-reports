@@ -5,8 +5,8 @@
   width: 400px;
   height: 550px;
   border: none;
-  background-color: #b9c7da;
-  border-radius: 3px;
+  background-color: rgb(232, 239, 243);
+  border-radius: 10px;
   box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 
   5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 
@@ -23,11 +23,11 @@
   max-width: 280px;
   height: auto;
   border-radius: 50%;
-  border: 1px solid rgb(136, 131, 131);
+  border: 2px solid rgb(50,51,119);
+  /* background-color: white; */
 
 }
 
 .candidate-info {
-
   margin-top: 15px;
 }
