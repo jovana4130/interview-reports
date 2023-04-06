@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0px;
@@ -5,13 +11,23 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 50px auto;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.modal-overlay .modal {
+  background-color: #f5f5f6;
+  max-width: 1200px;
+  height: 50%;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 1, 1);
 }
 
 .modal-overlay .modal {
@@ -43,12 +59,91 @@
 
 .modal-overlay {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
+  /* background: rgba(255, 255, 255, 0.85); */
+  /* border-radius: 0px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15.6px);
   -webkit-backdrop-filter: blur(15.6px);
   border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.modal {
+  /* border: 2px solid royalblue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+  border-radius: 5px;
+  /* margin: 70px auto; */
+}
+
+.company-report {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.interviewee {
+  /* border: 2px solid royalblue; */
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: rgba(50, 51, 119);
+}
+
+.report-info {
+  /* border: 2px solid royalblue; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: fit-content;
+  margin-bottom: 5px;
+  /* width: 50%; */
+}
+
+.note {
+  /* border: 2px solid royalblue; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  /* width: 50%; */
+}
+
+.report-info p:nth-child(even),
+.company-name p:nth-child(even),
+.interview-date p:nth-child(even),
+.phase p:nth-child(even),
+.status p:nth-child(even),
+.note p:nth-child(even) {
+  font-size: 25px;
+  color: black;
+}
+
+.report-info,
+.company-name,
+.interview-date,
+.phase,
+.status {
+  font-size: 15px;
+  color: rgb(102, 100, 100);
+  flex: 1;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 @media all and (max-width: 1300px) {
@@ -71,5 +166,17 @@
 @media all and (max-width: 400px) {
   .modal-overlay .close-button {
     margin-bottom: 550px;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 100%;
+    background-color: rgba(50, 51, 119);
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
   }
 }
