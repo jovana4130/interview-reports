@@ -3,23 +3,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 .card {
-  
-  border: 2px solid rgb(93, 85, 85) ;
+  border: 2px solid rgb(93, 85, 85);
   padding: 20px;
   width: 350px;
   height: 450px;
   margin-right: 40px;
   margin-bottom: 40px;
   overflow: hidden;
- 
-
 }
 
 .card .card--placeholder {
-
- opacity: 0.5;
+  opacity: 0.5;
 }

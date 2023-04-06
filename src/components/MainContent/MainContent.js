@@ -29,6 +29,7 @@ function MainContent(props) {
       <div className="candidates">
         <h1>Candidates</h1>
         <input
+          className="search"
           type="text"
           placeholder="Search..."
           name="search"
@@ -43,12 +44,12 @@ function MainContent(props) {
       <div className="candidates-list">
         {candidates.length === 0 &&
           candidatesPlaceholderCard.map((item, index) => {
-            return (<CandidatesPlaceholderCard key={index} />);
+            return <CandidatesPlaceholderCard key={index} />;
           })}
 
         {candidates.length > 0 &&
-           filteringCandidates.map((item) => {
-             return <CandidateCard key={item.id} item={item} />
+          filteringCandidates.map((item) => {
+            return <CandidateCard key={item.id} item={item} />;
           })}
       </div>
     </div>

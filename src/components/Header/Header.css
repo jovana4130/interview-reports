@@ -1,7 +1,6 @@
 .header {
-
   min-height: 80px;
-  padding: 0 50px;
+  padding: 0px 50px;
   /* padding-bottom: 20px; */
 
   display: flex;
@@ -10,31 +9,28 @@
   justify-content: space-between;
   align-items: center;
 
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
-  15px 15px 15px rgba(0, 0, 0, 0.1),
-  20px 20px 15px rgba(0, 0, 0, 0.1),
-  30px 30px 15px rgba(0, 0, 0, 0.1),
-  inset 1px 1px 2px #fff;
-
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1),
+    20px 20px 15px rgba(0, 0, 0, 0.1), 30px 30px 15px rgba(0, 0, 0, 0.1),
+    inset 1px 1px 2px #fff;
 }
 
- /* .header a { 
+/* .header a { 
 
   text-decoration: none;
   color: rgb(71, 76, 82);
 
 } */
 
-.header  {
+.header {
   text-decoration: none;
   color: rgb(30, 31, 31);
 }
 
 .main-title button {
- border: none;
- background-color: inherit;
- cursor: pointer;
- 
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 /*.header h3 {
@@ -50,7 +46,7 @@
   /* border: 1px solid rgb(229, 226, 226);  */
   border-radius: 7px;
   text-align: center;
-  box-shadow: 2px 2px 2px #b3f5ff; 
+  box-shadow: 2px 2px 2px #b3f5ff;
   transform-style: preserve-3d;
   background-color: #fffffe;
 }
@@ -79,7 +75,7 @@
   transform: rotateX(90deg);
 }  */
 .candidates-button:active {
-  background-color: #b3f5ff; 
+  background-color: #b3f5ff;
   box-shadow: 2px 2px 2px rgb(251, 251, 251);
   transform: translateY(4px);
 }
@@ -89,3 +85,32 @@ padding: 10px 40px;
 overflow:hidden;
 transition: .1s linear;
 transition-delay: .6s;*/
+
+@media all and (max-width: 700px) {
+  .header {
+    justify-content: center;
+  }
+  .main-title button {
+    font-size: 10px;
+  }
+  .candidates-button {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  .candidates-button button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #b3f5ff;
+    transform-style: preserve-3d;
+    background-color: #fffffe;
+  }
+  .candidates {
+    font-size: 10px;
+  }
+}

@@ -1,10 +1,30 @@
 .App {
-
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
   min-height: 100vh;
+}
 
+@media all and (max-width: 1300px) {
+}
+
+@media all and (max-width: 920px) {
+}
+
+@media all and (max-width: 700px) {
+}
+
+@media all and (max-width: 320px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  }
 }
