@@ -7,7 +7,7 @@ function CandidateCard(props) {
   const imgSrc = item.avatar;
 
   return (
-    <div>
+    <div className="candidate-div">
       <div className="card" onClick={() => navigate("/candidate/" + item.id)}>
         <div className="candidate-image">
           <img src={imgSrc} alt="A Candidate" />

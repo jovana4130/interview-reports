@@ -1,5 +1,7 @@
+.candidate-div {
+  padding-left: 50px;
+}
 .card {
-
   margin-top: 50px;
   margin-right: 50px;
   width: 400px;
@@ -7,27 +9,70 @@
   border: none;
   background-color: rgb(232, 239, 243);
   border-radius: 10px;
-  box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 
-  5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5),
+    5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .card img {
-
   max-width: 280px;
   height: auto;
   border-radius: 50%;
-  border: 2px solid rgb(50,51,119);
+  border: 2px solid rgb(50, 51, 119);
   /* background-color: white; */
-
 }
 
 .candidate-info {
   margin-top: 15px;
+  font-size: 20px;
+}
+
+@media all and (max-width: 1300px) {
+  .card {
+    width: 300px;
+    height: 450px;
+  }
+
+  .card img {
+    max-width: 180px;
+  }
+  .candidate-info {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .card {
+    width: 200px;
+    height: 250px;
+  }
+
+  .card img {
+    max-width: 80px;
+  }
+  .candidate-info {
+    margin-top: 8px;
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .card {
+    width: 150px;
+    height: 170px;
+  }
+
+  .card img {
+    max-width: 40px;
+  }
+  .candidate-info {
+    font-size: 10px;
+  }
 }

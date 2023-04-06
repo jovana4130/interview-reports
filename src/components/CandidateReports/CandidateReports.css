@@ -1,108 +1,195 @@
 .candidate-reports {
-    width: 95%;
-    /* margin: 50px auto; */
-    /* height: 100%; */
-    margin: 0;
+  width: 100%;
+  /* margin: 50px auto; */
+  /* height: 100%; */
+  margin: 0;
+  padding: 0px;
 }
 
 .id-container {
-    display: flex;
-    width: 90%;
-    /* height: auto; */
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5%;
-    border-radius: 5px;
-    margin: 70px auto;
-    border: 2px solid royalblue;  /* do not panic its just for styling. */
+  display: flex;
+  width: 90%;
+  /* height: auto; */
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+  border-radius: 5px;
+  margin: 70px auto;
+  border: 2px solid royalblue; /* do not panic its just for styling. */
 }
 
 .avatar {
-    filter: drop-shadow(2px 4px 8px #494846); 
-    /* border-radius: 50%; */
-    padding: 10px;
-    opacity: 30%;
-    border: 2px solid royalblue;
-    flex: 1; /* svi elementi da budu iste velicine, flex 2 bice duplo veci*/
+  filter: drop-shadow(2px 4px 8px #494846);
+  /* border-radius: 50%; */
+  padding: 10px;
+  opacity: 30%;
+  border: 2px solid royalblue;
+  flex: 1; /* svi elementi da budu iste velicine, flex 2 bice duplo veci*/
 }
 
-.avatar>img {
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-    border: 2px solid rgb(50,51,119);
-    background-color: white;
+.avatar > img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid rgb(50, 51, 119);
+  background-color: white;
 }
 
 .name-email {
-    border: 2px solid royalblue;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+  border: 2px solid royalblue;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
-.name-email p:nth-child(even), .birth-education p:nth-child(even) {
-    font-size: 30px;
+.name-email p:nth-child(even),
+.birth-education p:nth-child(even) {
+  font-size: 30px;
 }
 
-.birth-education{
-    border: 2px solid royalblue;
-    flex: 1;
+.birth-education {
+  border: 2px solid royalblue;
+  flex: 1;
 }
 
-.avatar, .name, .birthday, .email, .education {
-    font-size: 20px;
-    color: rgb(102, 100, 100);
-    font-weight: lighter;
-    /* display: flex;
+.avatar,
+.name,
+.birthday,
+.email,
+.education {
+  font-size: 20px;
+  color: rgb(102, 100, 100);
+  font-weight: lighter;
+  /* display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center; */
-    flex: 1;
+  flex: 1;
 }
 
 h3 {
-    width: 90%;
-    margin: 5px auto;
+  width: 90%;
+  margin: 5px auto;
 }
 
 table {
-    width: 90%;
-    border-spacing: 0;
-    border-collapse: collapse;
-    margin: 20px auto;
-    margin-bottom: 2%;
-    height: 200px;
-    box-shadow:7px 7px 7px #8F98B3,
-    -5px -5px 8px #EAE6E6 ;
-    background-color: rgb(255, 255, 255);
-    /* opacity: 70%; */
+  width: 90%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 20px auto;
+  margin-bottom: 2%;
+  height: 200px;
+  box-shadow: 7px 7px 7px #8f98b3, -5px -5px 8px #eae6e6;
+  background-color: rgb(255, 255, 255);
+  /* opacity: 70%; */
 }
 
-th, td {
-    text-align: center;
+th,
+td {
+  text-align: center;
 }
 
 th {
-    font-size: 1.3em;
-    color: rgb(50,51,119);
+  font-size: 1.3em;
+  color: rgb(50, 51, 119);
 }
 
 td {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
-thead, tr, th, td {
-    height: 50px;
-    box-shadow: inset 4px 4px 7px #8F98B3,
-    inset -3px -3px 6px #EAE6E6;
+thead,
+tr,
+th,
+td {
+  height: 50px;
+  box-shadow: inset 4px 4px 7px #8f98b3, inset -3px -3px 6px #eae6e6;
 }
 
 span {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1200px) {
+  .id-container {
+    margin: 20px auto;
+  }
+  .avatar > img {
+    width: 150px;
+  }
+  .name-email p:nth-child(even),
+  .birth-education p:nth-child(even) {
+    font-size: 15px;
+    margin: 8px 0px;
+  }
+
+  .avatar,
+  .name,
+  .birthday,
+  .email,
+  .education {
+    font-size: 20px;
+    margin: 8px 0px;
+  }
+  table {
+    margin-bottom: 350px;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .avatar > img {
+    width: 100px;
+  }
+  .name-email p:nth-child(even),
+  .birth-education p:nth-child(even) {
+    font-size: 18px;
+  }
+  .name-email p:nth-child(even),
+  .birth-education p:nth-child(even) {
+    font-size: 12px;
+  }
+  th {
+    font-size: 1em;
+    color: #7774e4;
+  }
+
+  td {
+    font-size: 1em;
+  }
+
+  thead,
+  tr,
+  th,
+  td {
+    height: 30px;
+  }
+  table {
+    margin-bottom: 470px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  .id-container {
+    margin: 10px auto;
+    gap: 3%;
+    justify-content: center;
+  }
+  .avatar > img {
+    width: 75px;
+  }
+  .name-email p:nth-child(even),
+  .birth-education p:nth-child(even) {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  table {
+    margin-bottom: 250px;
+  }
 }
