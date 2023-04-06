@@ -112,10 +112,6 @@
     /* width: 50%; */
 }
 
-.notes {
-
-}
-
 .report-info p:nth-child(even), .company-name p:nth-child(even), .interview-date p:nth-child(even), .phase p:nth-child(even), .status p:nth-child(even), .note p:nth-child(even) {
     font-size: 25px;
     color: black;
